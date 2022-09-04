@@ -5,6 +5,8 @@ const all_sections = document.querySelector('.main-content');
 
 const game_list = document.querySelectorAll('.game-list');
 
+import {content as games} from './javascript/games.js';
+
 //import {get_content as get_games} from 'javascript/games.js';
 
 function page_transitions()
@@ -52,31 +54,10 @@ function page_transitions()
 
 function append_games()
 {
-    let games = [];
-    
-    games[0] = {
-            name: 'Roll Your Life',
-            image_name : 'roll_your_life.png',
-            description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta ex sed molestie maximus. Integer ut sapien quis leo gravida volutpat. Ut quis nisl magna.    Donec iaculis ipsum a facilisis sagittis',
-            link : ''
-        }
-
-    games[1] = {
-        name: 'Roll Your Life',
-        image_name : 'roll_your_life.png',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta ex sed molestie maximus. Integer ut sapien quis leo gravida volutpat. Ut quis nisl magna.    Donec iaculis ipsum a facilisis sagittis',
-        link : ''
-    }
-
-    games[2] = {
-        name: 'Roll Your Life',
-        image_name : 'roll_your_life.png',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta ex sed molestie maximus. Integer ut sapien quis leo gravida volutpat. Ut quis nisl magna.    Donec iaculis ipsum a facilisis sagittis',
-        link : ''
-    }
-
     let div_string = ""
     
+    console.log(games);
+
     for (var i = 0; i < games.length; i++)
     {
         div_string += `
@@ -92,6 +73,12 @@ function append_games()
                     <p>
                         `+games[i].description+`
                     </p>
+                </div>
+
+                <div class="date">
+                    <h4>
+                        `+games[i].date+` - <span> `+games[i].team+` </span>
+                    </h4>
                 </div>
 
                 <div class="btn-con">

@@ -11,10 +11,13 @@
   --color-panel: #231442;
   --color-panel-selected: #2c1758;
   --color-header: #1c0e38;
+  --color-header-shadow: #140829;
   --color-title: #fffff1;
-  --color-title-shadow: #0f0320;
-  --color-text-1: #fffedb;
-  --color-text: #FFFDB8;
+  --color-title-shadow: #0e021f;
+  --color-text: #ffffff;
+  --color-text-1: #FFFDB8;
+  --color-date: #c7c7c7;
+  --color-team: #faffd0;
   --color-control-box: #2e1663;
   --color-control-box-selected: #533496;
   --color-control-icon: #FFFDB8;
@@ -28,6 +31,8 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 1.1rem;
   transition: all 0.4s ease-in-out;
+  min-width: 768px;
+  min-height: 768px;
 }
 
 a {
@@ -43,12 +48,23 @@ header {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   height: 25vh;
-  color: var(--color-white);
   text-justify: center;
   justify-content: center;
   text-align: center;
   z-index: 99;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+header .background-shape-header {
+  width: inherit;
+  height: inherit;
+  background-color: var(--color-header-shadow);
+  position: relative;
+  left: 0;
+  bottom: 25vh;
+  z-index: 100;
+  -webkit-clip-path: polygon(0 -10px, 22% -10px, 25% 100%, 0 100%);
+          clip-path: polygon(0 -10px, 22% -10px, 25% 100%, 0 100%);
 }
 header img {
   position: relative;
@@ -56,6 +72,7 @@ header img {
   height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 101;
 }
 
 section {
@@ -189,17 +206,17 @@ section {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-text);
 }
 .sec-title h2 span {
-  color: var(--color-text);
+  color: var(--color-text-1);
 }
 .sec-title h2 .bg-text {
   width: 110%;
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--color-panel-selected);
+  color: var(--color-title-shadow);
   transition: all 0.4s ease-in-out;
   z-index: -1;
   transform: translateY(4px) translate(-50%, -50%);
@@ -216,10 +233,10 @@ section {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-text);
 }
 .sec-description h3 span {
-  color: var(--color-text);
+  color: var(--color-text-1);
 }
 
 .games-content {
@@ -233,7 +250,6 @@ section {
   display: grid;
   gap: 3rem;
   margin-top: 5rem;
-  min-width: 500px;
   justify-items: center;
 }
 .game-list .game {
@@ -270,28 +286,40 @@ section {
 .game-list .game .game-details .btn-con {
   position: absolute;
   justify-content: right;
+  align-self: bottom;
   right: 2%;
   bottom: 5%;
+}
+.game-list .game .game-details .date {
+  position: absolute;
+  padding: 1.2rem;
+  padding-bottom: 0.7rem;
+  bottom: 0;
+}
+.game-list .game .game-details .date h4 {
+  text-justify: left;
+  text-align: bottom;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+.game-list .game .game-details .date h4 span {
+  color: var(--color-text-1);
 }
 .game-list .game .game-details .desc {
   overflow: hidden;
   position: absolute;
   height: inherit;
   padding: 1.2rem;
-  max-height: 12vw;
+  max-height: 10vw;
 }
 .game-list .game .game-details .desc h4 {
-  color: var(--color-white);
+  color: var(--color-text-1);
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.game-list .game .game-details .desc h4:hover {
-  color: var(--color-text);
 }
 .game-list .game .game-details .desc p {
-  color: var(--color-text-1);
+  color: var(--color-text);
   line-height: 2rem;
   padding-bottom: 1rem;
 }
@@ -314,7 +342,7 @@ section {
 }
 .download-btn .btn-text {
   padding: 0 2rem;
-  color: rgb(255, 255, 255);
+  color: var(--color-control-icon);
 }
 .download-btn .btn-icon {
   background-color: var(--color-control-icon);

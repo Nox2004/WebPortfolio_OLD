@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Nox's Web Portfolio</title>
+    <link rel="icon" href="/images/favicon.ico">
+    
     <link rel="stylesheet" href="styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +17,9 @@
 
 <body class="main-content">
 
-    <header class="header" id="">
+    <header class="header">
         <img src="images/LOGO.png"> 
+        <div class = "background-shape-header"> </div>
     </header>
     
     <main>
@@ -61,22 +64,22 @@
     </main>
 
     <div class="controlls">
-        <div class="control control-1 active-btn" title="AAAAAAAAAAAAAAAAAAAAAA" data-id="games">
+        <div class="control control-1 active-btn" title="My Games" data-id="games">
             <i class="fa-solid fa-gamepad"></i>
         </div>
-        <div class="control control-2 " data-id="projects">
+        <div class="control control-2 " title="My Other Projects" data-id="projects">
             <i class="fa-solid fa-sheet-plastic"></i>
         </div>
-        <div class="control control-3 " data-id="about">
+        <div class="control control-3 " title="About Me" data-id="about">
             <i class="fa-solid fa-user"></i>
         </div>
-        <div class="control control-4 " data-id="contact">
+        <div class="control control-4 " title="Contact Me" data-id="contact">
             <i class="fa-solid fa-envelope"></i>
         </div>
     </div>
 
     <div class = "background-shape"> </div>
 
-    <script src = "app.js"> </script>
+    <script type="module" src = "app.js"> </script>
 </body>
 </html>
