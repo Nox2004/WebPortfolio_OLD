@@ -15,7 +15,7 @@ function page_transitions()
         {
             let c_button = document.querySelectorAll('.active-btn');
             c_button[0].className = c_button[0].className.replace('active-btn','');
-            this.className += ' active-btn'
+            this.className += ' active-btn';
         })
     }
 
