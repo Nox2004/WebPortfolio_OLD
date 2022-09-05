@@ -226,7 +226,7 @@ section {
     h2 {
         position: relative;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 4vw;
         font-weight: 700;
         color: var(--color-text);
         span { color: var(--color-text-1); }
@@ -241,7 +241,7 @@ section {
             z-index: -1;
             transform: translateY(4px) translate(-50%, -50%);
             font-weight: 800;
-            font-size: 4.2rem;
+            font-size: 4.2vw;
         }
     }
 }
@@ -253,7 +253,7 @@ section {
         position: relative;
         top: 30px;
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.4vw;
         font-weight: 700;
         color: var(--color-text);
         span { color: var(--color-text-1); }
@@ -279,7 +279,7 @@ section {
     
     .game {
         width: 80%;
-        height: 13vw;
+        height: 14vw;
         position: relative;
         
         display: grid;
@@ -335,7 +335,7 @@ section {
                     text-justify: left;
                     text-align: bottom;
                     color: var(--color-text);
-                    font-size: .9rem;
+                    font-size: .9vw;
                     span{
                         color: var(--color-text-1);
                     }
@@ -344,25 +344,27 @@ section {
 
             .desc
             {
+                //font-size: 100%;
                 overflow: hidden;
                 position: absolute;
                 height: inherit;
                 
                 //margin-top: -40px;
                 padding: 1.2rem;
-                max-height: 10vw;
+                max-height: 12vw;
                 
                 h4 {
                     color: var(--color-text-1);
-                    font-size: 1.5rem;
-                    margin-bottom: .7rem;
+                    font-size: 1.4vw;
+                    margin-bottom: .4rem;
                     transition: all .4s ease-in-out;
                     //cursor: pointer;
                     //&:hover { color: var(--color-text); }
                 }
                 p{
+                    font-size: 1.15vw;
                     color: var(--color-text);
-                    line-height: 2rem;
+                    line-height: 2vw;
                     padding-bottom: 1rem;
                 }
             }
