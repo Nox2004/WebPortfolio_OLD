@@ -49,6 +49,15 @@ function page_transitions()
     })
 }
 
+function theme_button()
+{
+    const btn = document.querySelector('.theme-btn');
+    btn.addEventListener('click', () => {
+        let element = document.body;
+        element.classList.toggle('light-mode');
+    })
+}
+
 // const game_list = document.querySelectorAll('.game-list');
 // game_list[0].appendChild()
 
@@ -99,3 +108,5 @@ console.log('AAAAA');
 page_transitions();
 
 append_games();
+
+theme_button();

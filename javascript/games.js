@@ -4,7 +4,7 @@ let i = 0;
 content[i] = {
     name: 'Untitled Space Game',
     image_name : 'untitled_shooter.webp',
-    description : 'The untitled shooter game is basically one of my previous games, Space Invaders 3.0, but I added a online multiplayer mode to it.<BR>I was really exited to try out the new GameMaker RollBack System at the time.',
+    description : 'The untitled shooter game is basically one of my previous games, Space Invaders 3.0, but I added an online multiplayer mode to it.<BR>I was really excited to try out the new GameMaker RollBack System at the time.',
     link : 'https://gx.games/games/nes7cw/untitled-space-shooter-game/',
 
     date : '08/05/2022',
