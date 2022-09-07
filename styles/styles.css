@@ -24,6 +24,7 @@
   --color-white: white;
   --color-black: black;
   --br-sm-2: 14px;
+  --logo-filter: invert(84%) sepia(34%) saturate(239%) hue-rotate(357deg) brightness(600%) contrast(102%);
 }
 
 .light-mode {
@@ -43,6 +44,7 @@
   --color-white: white;
   --color-black: black;
   --br-sm-2: 14px;
+  --logo-filter: invert(21%) sepia(93%) saturate(3326%) hue-rotate(220deg) brightness(70%) contrast(104%);
 }
 
 body {
@@ -82,6 +84,8 @@ header .logo {
   bottom: 10%;
 }
 header .logo .logo-text {
+  transition: all 0.5 ease-in-out;
+  filter: var(--logo-filter);
   transform: translateX(-20%);
   height: inherit;
   position: absolute;
@@ -218,6 +222,7 @@ section {
   pointer-events: none;
 }
 .theme-btn:hover {
+  background-color: var(--color-control-box-selected);
   transform: translateY(-10px) scale(1.1);
 }
 

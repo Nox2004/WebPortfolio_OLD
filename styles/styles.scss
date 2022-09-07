@@ -30,6 +30,8 @@
     --color-white : white;
     --color-black : black;
     --br-sm-2: 14px;
+
+    --logo-filter: invert(84%) sepia(34%) saturate(239%) hue-rotate(357deg) brightness(600%) contrast(102%);
 }
 
 .light-mode {
@@ -53,6 +55,8 @@
     --color-white: white;
     --color-black: black;
     --br-sm-2: 14px;
+
+    --logo-filter : invert(21%) sepia(93%) saturate(3326%) hue-rotate(220deg) brightness(70%) contrast(104%);
 }
 
 body{
@@ -88,7 +92,6 @@ header {
 
     .logo  {
         transform: translateY(-95%);
-        //filter: invert(18%) sepia(95%) saturate(3372%) hue-rotate(241deg) brightness(71%) contrast(150%);
 
         position: relative;
         z-index: 100;
@@ -102,6 +105,8 @@ header {
         bottom: 10%;
         
         .logo-text {
+            transition: all 0.5 ease-in-out;
+            filter: var(--logo-filter);
             transform: translateX(-20%);
 
             height: inherit;
@@ -231,6 +236,7 @@ section {
     }
 
     &:hover {
+        background-color : var(--color-control-box-selected);
         transform : translateY(-10px) scale(1.1);
     }
 }
