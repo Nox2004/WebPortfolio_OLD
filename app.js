@@ -110,3 +110,28 @@ page_transitions();
 append_games();
 
 theme_button();
+/*
+Hello! my name is Gabriel, but you can call me Nox. I'm a 17 years old brazilian dev.
+
+I have always loved video games! When I was 13, I read about making games easily using scratch in a kids magazine, this was my first contact with programming.
+After making some unplayable games with scratch, I downloaded GameMaker Studio and started to make some plataformers. 
+In the following years I had developed a lot of unfinished stuff, aswell as some finished stuff (which you can see in this website :D).
+
+Right now I'm studying game design in college and working as an intern Systems Analyst.
+
+I have some profeciency in this languages:
+
+- GML
+- JavaScript
+- C#
+- Python 3.0
+- Java
+- CSS
+
+And I am experencied with this game engines:
+
+- Game Maker
+- Unity
+- Godot (mentira ainda nao kkkkkk)
+
+*/

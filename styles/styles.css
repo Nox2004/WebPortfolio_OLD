@@ -313,6 +313,88 @@ section {
   color: var(--color-text-1);
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: 65% auto;
+  padding: 5%;
+  padding-top: 5rem;
+}
+.about-container .about-bio {
+  text-align: left;
+}
+.about-container .about-bio h3 {
+  position: relative;
+  line-height: 32px;
+  padding-right: 10%;
+  font-size: 1.3vw;
+  font-weight: 300;
+  color: var(--color-text);
+}
+.about-container .about-bio h3 span {
+  color: var(--color-text-1);
+}
+.about-container .right-about {
+  flex: 2;
+  align-items: center;
+  align-self: center;
+}
+.about-container .right-about .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-text) !important;
+}
+.about-container .right-about .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.about-container .right-about .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.about-container .right-about .contact-info .contact-item .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.about-container .right-about .contact-icons {
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+  justify-content: right;
+  transform: translatex(26%);
+}
+.about-container .right-about .contact-icons .contact-icon {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: line;
+}
+.about-container .right-about .contact-icons .contact-icon a {
+  display: flex;
+  color: var(--color-control-icon);
+  background-color: var(--color-control-box);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.about-container .right-about .contact-icons .contact-icon a:hover {
+  background-color: var(--color-control-box-selected);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+}
+.about-container .right-about .contact-icons .contact-icon a:hover i {
+  color: var(--color-control-icon);
+}
+.about-container .right-about .contact-icons .contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
 .games-content {
   top: 20px;
   position: relative;
@@ -455,136 +537,22 @@ section {
   transition: all 0.4s ease-out;
 }
 
-.contact-content-con {
-  display: grid;
-  grid-template-columns: 35% auto;
-  padding-top: 3.5rem;
-}
-.contact-content-con h4 {
-  color: var(--color-text) !important;
-}
-.contact-content-con .left-contact {
-  flex: 2;
-}
-.contact-content-con .left-contact .btn-con-submit {
-  padding-top: 10%;
-  display: flex;
-  justify-content: center;
-}
-.contact-content-con .left-contact .submit-btn {
-  border-radius: 8px;
-  color: inherit;
-  font-weight: 600;
-  position: relative;
-  border: 2px solid var(--color-control-icon);
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  overflow: hidden;
-}
-.contact-content-con .left-contact .submit-btn .btn-text {
-  padding: 0 2rem;
-  color: var(--color-control-icon);
-}
-.contact-content-con .left-contact .submit-btn .btn-icon {
-  background-color: var(--color-control-icon);
-  color: var(--color-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  padding: 0.5rem;
-}
-.contact-content-con .left-contact .submit-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(-100%);
-  transition: all 0.4s ease-out;
-  z-index: -1;
-}
-.contact-content-con .left-contact .submit-btn::before .btn-text {
-  color: var(--color-text-1);
-}
-.contact-content-con .left-contact .submit-btn:hover {
-  transition: all 0.4s ease-out;
-}
-.contact-content-con .left-contact .submit-btn:hover .btn-text {
-  color: var(--color-background);
-  transition: all 0.4s ease-out;
-}
-.contact-content-con .left-contact .submit-btn:hover::before {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-control-icon);
-  transform: translateX(0);
-  transition: all 0.4s ease-out;
-}
-.contact-content-con .left-contact .contact-info .contact-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--color-text) !important;
-}
-.contact-content-con .left-contact .contact-info .contact-item p {
-  margin: 0.3rem 0 !important;
-  padding: 0 !important;
-}
-.contact-content-con .left-contact .contact-info .contact-item .icon {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-}
-.contact-content-con .left-contact .contact-info .contact-item .icon i {
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-}
-.contact-content-con .left-contact .contact-icon {
-  display: flex;
-  margin-top: 2rem;
-  flex-direction: line;
-  transform: translatex(30%);
-}
-.contact-content-con .left-contact .contact-icon a {
-  align-self: center;
-  display: flex;
-  align-items: center;
-  color: var(--color-control-icon);
-  background-color: var(--color-control-box);
-  cursor: pointer;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 0 0.4rem;
-  transition: all 0.4s ease-in-out;
-}
-.contact-content-con .left-contact .contact-icon a:hover {
-  background-color: var(--color-control-box-selected);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
-}
-.contact-content-con .left-contact .contact-icon a:hover i {
-  color: var(--color-control-icon);
-}
-.contact-content-con .left-contact .contact-icon a i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-}
-.contact-content-con .right-contact {
+.contact-form {
+  padding: 7%;
   flex: 3;
-  margin-left: 3rem;
-  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.contact-content-con .right-contact .input-control {
+.contact-form h4 {
+  color: var(--color-text) !important;
+}
+.contact-form .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-form .input-control input, .contact-form .input-control textarea {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
   transition: all 0.5s ease-in-out;
-  border-radius: 30px;
+  border-radius: 15px;
   font-weight: inherit;
   font-size: inherit;
   font-family: inherit;
@@ -596,15 +564,69 @@ section {
   color: var(--color-text);
   resize: none;
 }
-.contact-content-con .right-contact .i-c-2 {
+.contact-form .i-c-2 {
   display: flex;
 }
-.contact-content-con .right-contact .i-c-2 :last-child {
+.contact-form .i-c-2 :last-child {
   margin-left: 1.5rem;
 }
-.contact-content-con .right-contact .submit-btn {
+.contact-form .submit-btn {
   display: flex;
   justify-content: flex-start;
+}
+.contact-form .btn-con-submit {
+  display: flex;
+  justify-content: center;
+}
+.contact-form .submit-btn {
+  border-radius: 8px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 2px solid var(--color-control-icon);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.contact-form .submit-btn .btn-text {
+  padding: 0 2rem;
+  color: var(--color-control-icon);
+}
+.contact-form .submit-btn .btn-icon {
+  background-color: var(--color-control-icon);
+  color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+.contact-form .submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+.contact-form .submit-btn::before .btn-text {
+  color: var(--color-text-1);
+}
+.contact-form .submit-btn:hover {
+  transition: all 0.4s ease-out;
+}
+.contact-form .submit-btn:hover .btn-text {
+  color: var(--color-background);
+  transition: all 0.4s ease-out;
+}
+.contact-form .submit-btn:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-control-icon);
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
 }
 
 .background-shape {
