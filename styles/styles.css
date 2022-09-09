@@ -25,6 +25,7 @@
   --color-black: black;
   --br-sm-2: 14px;
   --logo-filter: invert(84%) sepia(34%) saturate(239%) hue-rotate(357deg) brightness(600%) contrast(102%);
+  --text-filter: 0;
 }
 
 .light-mode {
@@ -45,6 +46,7 @@
   --color-black: black;
   --br-sm-2: 14px;
   --logo-filter: invert(21%) sepia(93%) saturate(3326%) hue-rotate(220deg) brightness(70%) contrast(104%);
+  --text-filter: invert(26%) sepia(39%) saturate(1411%) hue-rotate(217deg) brightness(94%) contrast(88%);
 }
 
 body {
@@ -393,6 +395,43 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
+}
+
+.my-languages {
+  text-align: center;
+}
+.my-languages h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 800;
+  color: var(--color-text-1);
+  padding-bottom: 2vh;
+}
+.my-languages h2 span {
+  color: var(--color-text);
+}
+.my-languages .languages-list {
+  display: grid;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.my-languages .languages-list h3 {
+  padding: 1.2vh;
+  font-size: 1.7vw;
+  font-weight: 800;
+  color: var(--color-text);
+}
+.my-languages .languages-list h3 i {
+  color: var(--color-text);
+}
+.my-languages .languages-list h3 img {
+  align-self: center;
+  text-align: center;
+  filter: var(--text-filter);
+  height: 2.2rem;
+  transform: translateY(0.4rem);
 }
 
 .games-content {

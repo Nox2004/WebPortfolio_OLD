@@ -32,6 +32,7 @@
     --br-sm-2: 14px;
 
     --logo-filter: invert(84%) sepia(34%) saturate(239%) hue-rotate(357deg) brightness(600%) contrast(102%);
+    --text-filter: 0;
 }
 
 .light-mode {
@@ -57,6 +58,7 @@
     --br-sm-2: 14px;
 
     --logo-filter : invert(21%) sepia(93%) saturate(3326%) hue-rotate(220deg) brightness(70%) contrast(104%);
+    --text-filter: invert(26%) sepia(39%) saturate(1411%) hue-rotate(217deg) brightness(94%) contrast(88%);
 }
 
 body{
@@ -421,7 +423,49 @@ section {
         }
     }
 }
+.my-languages {
+    text-align: center;
+    h2 {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        font-weight: 800;
+        color: var(--color-text-1);
+        span { color: var(--color-text); }
 
+        padding-bottom: 2vh;
+    }
+
+    .languages-list {
+        display: grid;
+        position: relative;
+        align-items : center;
+        justify-content : center;        
+        h3 {
+            padding: 1.2vh;
+            font-size: 1.7vw;
+            font-weight: 800;
+            color: var(--color-text);
+            i { 
+                color: var(--color-text); 
+            }
+            img 
+            {
+                align-self: center;
+                text-align: center;
+                
+                
+                filter: var(--text-filter); 
+                //filter : opacity(1) drop-shadow(0 0 0 var(--color-text));
+                height: 2.2rem;
+                
+                transform: translateY(0.4rem);
+                //padding-top: .2rem;
+                //bottom : -.2rem;
+            }
+        }
+    }
+}
 
 
 //HEADER
