@@ -33,6 +33,16 @@
         }
     }
 
+    .unactive 
+    {
+        display:none;
+        animation:  offscaleAnim .0s ease-in;
+    }
+
+    .download-btn {
+        display:none;
+    }
+
     .controlls {
         bottom : 2%;
         top : auto;

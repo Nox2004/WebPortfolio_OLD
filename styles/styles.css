@@ -760,6 +760,14 @@ header .background-shape-header {
     padding-right: 4%;
     font-size: 3vw;
   }
+  .unactive {
+    display: none;
+    -webkit-animation: offscaleAnim 0s ease-in;
+            animation: offscaleAnim 0s ease-in;
+  }
+  .download-btn {
+    display: none;
+  }
   .controlls {
     bottom: 2%;
     top: auto;
