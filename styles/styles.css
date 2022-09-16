@@ -54,7 +54,6 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 1.1rem;
   transition: background-color 0.7s ease-in-out;
-  min-width: 768px;
   min-height: 768px;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
