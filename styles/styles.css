@@ -733,6 +733,7 @@ header .background-shape-header {
     position: absolute;
     left: 0;
     top: 18vh;
+    padding: 1rem 2rem;
     padding-bottom: 8rem;
   }
   .sec-title h2 {
