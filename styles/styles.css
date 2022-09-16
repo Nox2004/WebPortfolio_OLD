@@ -161,33 +161,25 @@ header {
   transition: background-color 0.7s ease-in-out;
 }
 header .logo {
-  transform: translateY(-95%);
+  transform: translateY(-100%);
   position: relative;
   z-index: 100;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  bottom: 10%;
+  height: inherit;
 }
 header .logo .logo-text {
   transition: filter 0.5 ease-in-out;
   filter: var(--logo-filter);
-  transform: translateX(-20%);
   height: inherit;
-  position: absolute;
+  width: auto;
+  transform: translateY(-100%) translateX(-20%);
   margin: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  display: block;
 }
 header .logo .logo-icon {
-  transform: translateX(-20%);
   height: inherit;
-  position: absolute;
+  transform: translateX(-20%);
   margin: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  display: block;
 }
 header .background-shape-header {
   width: inherit;
@@ -262,7 +254,7 @@ header .background-shape-header {
   height: 14vw;
   position: relative;
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 25% auto;
   background-color: var(--color-panel);
   border-radius: 5px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -733,31 +725,26 @@ header .background-shape-header {
           clip-path: polygon(0 0, 20% 0, 33% 100%, 0 100%);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (orientation: portrait) {
   header {
-    height: 18vh;
-  }
-  header .logo {
-    width: 85%;
-    height: 85%;
+    height: 20vh;
   }
   section {
     position: absolute;
     left: 0;
     top: 18vh;
-    padding: 0rem 1rem;
     padding-bottom: 8rem;
   }
   .sec-title h2 {
-    font-size: 8vw;
+    font-size: 11vw;
   }
   .sec-title h2 .bg-text {
-    font-size: 8.5vw;
+    font-size: 12vw;
   }
   .sec-description h3 {
     padding-left: 4%;
     padding-right: 4%;
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   .unactive {
     display: none;
@@ -820,7 +807,7 @@ header .background-shape-header {
     position: relative;
     line-height: 4vw;
     padding-right: 10%;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-weight: 300;
     color: var(--color-text);
   }
@@ -836,7 +823,7 @@ header .background-shape-header {
     padding-top: 5%;
   }
   .about-container .right-about .contact-info .contact-item {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   .about-container .right-about .contact-info .contact-item p {
     margin: 0.3rem 0 !important;
@@ -855,12 +842,12 @@ header .background-shape-header {
     flex-direction: line;
   }
   .my-languages h2 {
-    font-size: 3vw;
+    font-size: 4.5vw;
     padding-bottom: 2vh;
   }
   .my-languages .languages-list h3 {
     padding: 1.2vh;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
   .my-languages .languages-list h3 img {
     height: 2.4ex;
@@ -871,7 +858,7 @@ header .background-shape-header {
   }
   .game-list .game {
     width: 90%;
-    height: 50vh;
+    height: 60vh;
     position: relative;
     display: grid;
     grid-template-columns: 100%;
@@ -918,23 +905,23 @@ header .background-shape-header {
     text-justify: left;
     text-align: bottom;
     color: var(--color-text);
-    font-size: 1.5vh;
+    font-size: 2vh;
   }
   .game-list .game .game-details .date h4 span {
     color: var(--color-text-1);
   }
   .game-list .game .game-details .desc {
     height: inherit;
-    padding: 1.2rem;
+    padding: 1.3rem;
     max-height: 100%;
   }
   .game-list .game .game-details .desc h4 {
     color: var(--color-text-1);
-    font-size: 3vh;
+    font-size: 4vh;
     margin-bottom: 0.4rem;
   }
   .game-list .game .game-details .desc p {
-    font-size: 2vh;
+    font-size: 2.3vh;
     line-height: 3ex;
   }
   .contact-form {
@@ -942,6 +929,6 @@ header .background-shape-header {
     flex: 3;
     padding-top: 5%;
     padding-bottom: 2%;
-    font-size: 2vh;
+    font-size: 3.2vh;
   }
 }/*# sourceMappingURL=styles.css.map */
