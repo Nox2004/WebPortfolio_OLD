@@ -422,13 +422,15 @@ header .background-shape-header {
   justify-self: center;
   justify-items: center;
   align-items: center;
-  justify-content: right;
-  transform: translatex(26%);
 }
 .about-container .right-about .contact-icons .contact-icon {
+  left: 50%;
+  right: auto;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
   display: flex;
   margin-top: 2rem;
-  flex-direction: line;
 }
 .about-container .right-about .contact-icons .contact-icon a {
   display: flex;
@@ -831,13 +833,6 @@ header .background-shape-header {
   .about-container .right-about .contact-info .contact-item p {
     margin: 0.3rem 0 !important;
     padding: 0 !important;
-  }
-  .about-container .right-about .contact-icons {
-    justify-self: center;
-    justify-items: center;
-    align-items: center;
-    justify-content: right;
-    transform: translatex(26%);
   }
   .about-container .right-about .contact-icons .contact-icon {
     display: flex;

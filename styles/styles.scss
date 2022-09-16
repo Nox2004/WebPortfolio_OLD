@@ -469,13 +469,18 @@ header {
             justify-self: center;
             justify-items: center;
             align-items : center;
-            justify-content : right;
-            transform : translatex(+26%);
 
             .contact-icon {
+                
+                left : 50%;
+                right : auto;
+
+                flex-direction : row;
+                justify-content : center;
+                width: 100%;
                 display: flex;
                 margin-top: 2rem;
-                flex-direction : line;
+
                 a {
                     //align-self: center;
                     display: flex;
