@@ -731,6 +731,9 @@ header .background-shape-header {
   header {
     height: 20vh;
   }
+  header .logo {
+    transform: scale(0.6) translateY(-160%);
+  }
   section {
     position: absolute;
     left: 0;
