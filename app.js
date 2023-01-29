@@ -2,12 +2,14 @@ const sections = document.querySelectorAll('.section');
 const section_buttons  = document.querySelectorAll('.controlls');
 const section_button = document.querySelectorAll('.control');
 const all_sections = document.querySelector('.main-content');
+const languages = document.querySelectorAll('.language-item');
 
-const game_list = document.querySelectorAll('.game-list');
+
 
 import {content as games} from './javascript/games.js';
+import {translations_id, translations_text} from './javascript/languages.js';
 
-//import {get_content as get_games} from 'javascript/games.js';
+let language_id = translations_id['EN-US'];
 
 function page_transitions()
 {
@@ -26,14 +28,6 @@ function page_transitions()
 
         if (id)
         {
-            /*
-            section_buttons.forEach ((btn) =>
-            {
-                btn.classList.remove('active');
-            })
-            e.target.classList.add('active')
-            */
-            
             sections.forEach ((sec) =>
             {
                 if (sec.classList.contains('active'))
@@ -49,49 +43,76 @@ function page_transitions()
     })
 }
 
+function change_language()
+{
+    for (let i = 0; i < languages.length; i++)
+    {
+        languages[i].addEventListener('click', function () 
+        {
+            let c_button = document.querySelector('.current-language');
+            c_button.className = c_button.className.replace('current-language','');
+            this.className += ' current-language';
+
+            language_id = translations_id[this.innerHTML];
+            
+            const sec_list = translations_text[language_id];
+
+            sec_list.forEach((sec) => {
+                let element = document.getElementById(sec.sec_id);
+                element.innerHTML = sec.text;
+            })
+
+            append_games();
+        })
+    }
+}
+
 function theme_button()
 {
     const btn = document.querySelector('.theme-btn');
     btn.addEventListener('click', () => {
         let element = document.body;
         element.classList.toggle('light-mode');
+        
+        //console.log();
+
+        if (element.classList.contains('light-mode') == true) btn.innerHTML = '<i class="fa-sharp fa-solid fa-moon"></i>';
+        else btn.innerHTML = '<i class="fa-solid fa-sun"></i>';
     })
 }
 
-// const game_list = document.querySelectorAll('.game-list');
-// game_list[0].appendChild()
-
 function append_games()
 {
-    let div_string = ""
+    let div_string = "";
     
-    console.log(games);
+    let games_lang = games[language_id];
 
-    for (var i = 0; i < games.length; i++)
+    for (var i = 0; i < games_lang.length; i++)
     {
+        let game = games_lang[i];
         div_string += `
         <div class="game">
-            <img src="images/`+games[i].image_name+`" alt="">
+            <img src="images/`+game.image_name+`" alt="">
             <div class="game-details">
                 
 
                 <div class="desc">
                     <h4>
-                        `+games[i].name+`
+                        `+game.name+`
                     </h4>
                     <p>
-                        `+games[i].description+`
+                        `+game.description+`
                     </p>
                 </div>
 
                 <div class="date">
                     <h4>
-                        `+games[i].date+` - <span> `+games[i].team+` </span>
+                        `+game.date+` - <span> `+game.team+` </span>
                     </h4>
                 </div>
 
                 <div class="btn-con">
-                    <a href="`+games[i].link+`" class="download-btn">
+                    <a href="`+game.link+`" class="download-btn">
                         <span class="btn-text">Download</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
@@ -100,16 +121,20 @@ function append_games()
         </div>`
     }
 
-    game_list[0].innerHTML = div_string;
+    let game_list = document.querySelector('.game-list');
+    game_list.innerHTML = div_string;
 }
 
-
-console.log('AAAAA');
 page_transitions();
 
 append_games();
 
 theme_button();
+
+change_language();
+
+//let main_element = document.querySelector('main');
+//main_element.innerHTML = "AAAAAAAAAAA";
 /*
 Hello! my name is Gabriel, but you can call me Nox. I'm a 17 years old brazilian dev.
 

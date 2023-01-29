@@ -251,7 +251,7 @@ header .background-shape-header {
 }
 .game-list .game {
   width: 80%;
-  height: 14vw;
+  height: 16vw;
   position: relative;
   display: grid;
   grid-template-columns: 25% auto;
@@ -308,7 +308,7 @@ header .background-shape-header {
   position: absolute;
   height: inherit;
   padding: 1.2rem;
-  max-height: 12vw;
+  max-height: 14vw;
 }
 .game-list .game .game-details .desc h4 {
   color: var(--color-text-1);
@@ -705,13 +705,48 @@ header .background-shape-header {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
 }
 .theme-btn i {
+  transform: scale(1.1);
+  left: 50%;
+  top: 50%;
   font-size: 2rem;
   color: var(--color-control-icon);
   pointer-events: none;
 }
 .theme-btn:hover {
   background-color: var(--color-control-box-selected);
-  transform: translateY(-10px) scale(1.1);
+  transform: translateY(-10px) scale(1.2);
+}
+
+.languages {
+  display: grid;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+  position: fixed;
+  padding: 1rem;
+  cursor: pointer;
+  width: 160px;
+  height: 90px;
+  text-align: right;
+  justify-items: center;
+  margin: 0.7rem 0;
+  bottom: 3vh;
+  right: 3vh;
+}
+.languages .language-item {
+  transition: all 0.2s ease-out;
+  text-shadow: 2px 2px var(--color-background-shadow);
+  font-size: 1.8rem;
+  color: var(--color-control-icon);
+}
+.languages .language-item:hover {
+  color: var(--color-text);
+  transform: scale(1.1);
+}
+.languages .current-language {
+  text-shadow: 2px 2px var(--color-background-shadow);
+  font-size: 1.8rem;
+  color: var(--color-text);
+  transform: scale(1.1);
 }
 
 .background-shape {
