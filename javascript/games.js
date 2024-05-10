@@ -6,6 +6,24 @@ import {translations_id} from './languages.js';
 content[translations_id["EN-US"]] = 
 [
     {
+        name: 'Libras Project',	
+        image_name : 'libras.png',
+        description : 'This unnamed project is what Im currently working on. It is a game that aims to teach different Sign Languages (e.g. libras) to children using a fun and ludic "shooter" approach. The game is being developed in Unity and will be available for Android devices. But you can download the current version here (any feedback is welcome!).',
+        link : 'https://drive.google.com/uc?export=download&id=1byCHnfUIKZMZS9IvK4w6a5YLtZdGmcGP',
+    
+        date : 'Still in development',
+        team : 'with my Classmates'
+    },
+    {
+        name: 'Nuts & Bolts',	
+        image_name : 'nuts_and_bolts.png',
+        description : 'Nuts & Bolts is a (kinda unfinished) assymetric multiplayer game I made for college. In this 2-player game, players must play different roles, as a doctor and its assistent. The players will face different challenges and must collaborate in order to mantain their patient alive (oh and they are also robots!).',
+        link : 'https://drive.google.com/uc?export=download&id=1mfeHY_JvrvyvI6speXT73wM3xRe72yi2',
+    
+        date : '12/07/2023',
+        team : 'with my Classmates'
+    },
+    {
         name: 'Untitled Space Game',
         image_name : 'untitled_shooter.webp',
         description : 'The Untitled Shooter Game is basically one of my previous games, Space Invaders 3.0, but I added an online multiplayer mode to it.<BR>I was really excited to try out the new GameMaker RollBack System at the time.',
@@ -130,6 +148,24 @@ content[translations_id["EN-US"]] =
 
 content[translations_id["PT-BR"]] = 
 [
+    {
+        name: 'Projeto Libras',	
+        image_name : 'libras.png',
+        description : 'Esse projeto é o que estou trabalhando atualmente. É um jogo que tem como objetivo ensinar diferentes Línguas de Sinais (ex: libras) para crianças usando uma abordagem divertida e lúdica de "shooter". O jogo está sendo desenvolvido em Unity e estará disponível para dispositivos Android. Mas você pode baixar a versão atual aqui (qualquer feedback é bem vindo!).',
+        link : 'https://drive.google.com/uc?export=download&id=1byCHnfUIKZMZS9IvK4w6a5YLtZdGmcGP',
+    
+        date : 'Ainda em desenvolvimento',
+        team : 'com Colegas da Faculdade'
+    },
+    {
+        name: 'Nuts & Bolts',	
+        image_name : 'nuts_and_bolts.png',
+        description : 'Nuts & Bolts é um jogo multiplayer assimétrico (razoavelmente inacabado) que fiz para a faculdade. Nesse jogo de 2 jogadores, os jogadores devem desempenhar diferentes papéis, como um médico e seu assistente. Os jogadores enfrentarão diferentes desafios e devem colaborar para manter seu paciente vivo (ah, e eles também são robôs!).',
+        link : 'https://drive.google.com/uc?export=download&id=1mfeHY_JvrvyvI6speXT73wM3xRe72yi2',
+    
+        date : '07/12/2023',
+        team : 'com Colegas da Faculdade'
+    },
     {
         name: 'Untitled Space Game',
         image_name : 'untitled_shooter.webp',

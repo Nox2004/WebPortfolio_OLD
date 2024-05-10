@@ -40,7 +40,7 @@ translations_text[translations_id["EN-US"]] = [
         <div class="sec-description">
             <h3>Hello! my name is <span>Gabriel</span>, but you can call me <span>Nox</span>! 
             <BR>
-            I'm a 18 years old brazilian <span>dev</span>.</h3>
+            I'm a 19 years old brazilian <span>dev</span>.</h3>
         </div>
         <div class = "about-container">
             <div class = "about-bio">
@@ -219,7 +219,7 @@ translations_text[translations_id["PT-BR"]] = [
         <div class="sec-description">
             <h3>Olá! meu nome é <span>Gabriel</span>, Mas podem me chamar de <span>Nox</span>! 
             <BR>
-            Sou um <span>desenvolvedor de jogos</span> brasileiro com 18 anos.</h3>
+            Sou um <span>desenvolvedor de jogos</span> brasileiro com 19 anos.</h3>
         </div>
         <div class = "about-container">
             <div class = "about-bio">
